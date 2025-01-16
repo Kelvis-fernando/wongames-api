@@ -23,46 +23,38 @@
     "short_description": {
       "type": "text"
     },
-    "description": {
-      "type": "blocks"
-    },
     "price": {
       "type": "decimal",
       "required": true,
       "default": 0
+    },
+    "description": {
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "rich",
+        "licenseKey": "eyJhbGciOiJFUzI1NiJ9.eyJleHAiOjE3Njg2MDc5OTksImp0aSI6IjNjZjM1NTAwLTU1OTQtNDI4OS1iZjhjLWRiYTNjZDc5OTUyMSIsImxpY2Vuc2VkSG9zdHMiOlsiMTI3LjAuMC4xIiwibG9jYWxob3N0IiwiMTkyLjE2OC4qLioiLCIxMC4qLiouKiIsIjE3Mi4qLiouKiIsIioudGVzdCIsIioubG9jYWxob3N0IiwiKi5sb2NhbCJdLCJ1c2FnZUVuZHBvaW50IjoiaHR0cHM6Ly9wcm94eS1ldmVudC5ja2VkaXRvci5jb20iLCJkaXN0cmlidXRpb25DaGFubmVsIjpbImNsb3VkIiwiZHJ1cGFsIl0sImxpY2Vuc2VUeXBlIjoiZGV2ZWxvcG1lbnQiLCJmZWF0dXJlcyI6WyJEUlVQIl0sInZjIjoiNjg3NzQwN2QifQ.stUaqA3-PnL3d64vw-eL7z3NK1-ziYbxZOOxj6vgJpzSY1x77QJgG6_CDsS9qrO4XRZ7I3cGZEJVke8QmdTJ4Q"
+      },
+      "customField": "plugin::ckeditor.CKEditor"
     },
     "release_date": {
       "type": "date"
     },
     "rating": {
       "type": "enumeration",
-      "enum": [
-        "BR0",
-        "BR10",
-        "BR12",
-        "BR14",
-        "BR16",
-        "BR18"
-      ]
+      "enum": ["BR0", "BR10", "BR12", "BR14", "BR16", "BR18"]
     },
     "cover": {
       "type": "media",
       "multiple": false,
       "required": false,
-      "allowedTypes": [
-        "images"
-      ]
+      "allowedTypes": ["images"]
     },
     "gallery": {
       "type": "media",
       "multiple": true,
       "required": false,
-      "allowedTypes": [
-        "images",
-        "videos",
-        "audios",
-        "files"
-      ]
+      "allowedTypes": ["images", "videos", "audios", "files"]
     },
     "categories": {
       "type": "relation",
