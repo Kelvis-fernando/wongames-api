@@ -9,7 +9,8 @@
     "develop": "strapi develop",
     "seed:example": "node ./scripts/seed.js",
     "start": "strapi start",
-    "strapi": "strapi"
+    "strapi": "strapi",
+    "postinstall": "patch-package"
   },
   "dependencies": {
     "@ckeditor/strapi-plugin-ckeditor": "^1.1.0",
@@ -19,7 +20,9 @@
     "@strapi/strapi": "5.7.0",
     "fs-extra": "^10.0.0",
     "mime-types": "^2.1.27",
+    "patch-package": "^8.0.0",
     "pg": "8.8.0",
+    "postinstall-postinstall": "^2.1.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.0.0",
