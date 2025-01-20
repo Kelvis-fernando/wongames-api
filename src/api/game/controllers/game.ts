@@ -1,7 +1,14 @@
-/**
- * game controller
- */
+import { factories } from "@strapi/strapi";
 
-import { factories } from '@strapi/strapi'
+export default factories.createCoreController(
+  "api::game.game",
+  ({ strapi }) => ({
+    async populate(ctx) {
+      console.log("Starting to populate...");
 
-export default factories.createCoreController('api::game.game');
+      console.log(ctx.query);
+
+      ctx.send("Finishing populating...");
+    },
+  })
+);
