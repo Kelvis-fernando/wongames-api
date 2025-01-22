@@ -6,7 +6,7 @@ export default factories.createCoreController(
     async populate(ctx) {
       console.log("Starting to populate...");
 
-      console.log(ctx.query);
+      await strapi.service("api::game.game").populate(ctx.query);
 
       ctx.send("Finishing populating...");
     },

@@ -19,6 +19,7 @@
     "@strapi/plugin-users-permissions": "5.7.0",
     "@strapi/strapi": "5.7.0",
     "fs-extra": "^10.0.0",
+    "jsdom": "^26.0.0",
     "mime-types": "^2.1.27",
     "patch-package": "^8.0.0",
     "pg": "8.8.0",
@@ -26,6 +27,7 @@
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.0.0",
+    "slugify": "^1.6.6",
     "styled-components": "^6.0.0"
   },
   "devDependencies": {
